@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: AgroLands
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      #       ddl-auto: create
+      ddl-auto: create-drop
+    database: postgresql
+  elasticsearch:
+    rest:
+      uris: ${ELASTICSEARCH_URIS}
+server:
+  port: 8080
