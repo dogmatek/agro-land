@@ -11,8 +11,8 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "OWNER_LAND")
-public class OwnerToLand extends AbstractIdentified {
+@Entity(name = "CONTRACT_LAND")
+public class ContractToLands extends AbstractIdentified {
 
     private static final long serialVersionUID = 982887908597913919L;
 
@@ -25,7 +25,7 @@ public class OwnerToLand extends AbstractIdentified {
     private Land land;
 
     @ManyToOne(fetch= FetchType.EAGER)
-    @JoinColumn(name = "OWNER_ID")
+    @JoinColumn(name = "CONTRACT_ID")
     @Fetch(FetchMode.JOIN)
-    private Owner owner;
+    private Contract contract;
 }

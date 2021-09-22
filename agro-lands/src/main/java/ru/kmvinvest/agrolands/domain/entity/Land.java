@@ -28,7 +28,7 @@ public class Land extends AbstractIdentified {
     private String cadNum;
 
     @Column(name = "CAD_PRICE")
-    private Currency cadPrice;
+    private Double cadPrice;
 
     @Column(name = "ADDRESS")
     private String address;
@@ -38,6 +38,13 @@ public class Land extends AbstractIdentified {
 
     @Column(name = "CREATED")
     private LocalDate created;
+
     @OneToMany(mappedBy = "land", fetch = FetchType.EAGER)
     private List<OwnerToLand> ownerToLands;
+
+//    @OneToMany(mappedBy = "land", fetch = FetchType.EAGER)
+//    private List<ContractToLands> contractToLands;
+
+    @Column(name = "DESCRIPTION")
+    private String description;
 }

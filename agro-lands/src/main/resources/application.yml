@@ -1,3 +1,7 @@
+server:
+  servlet:
+    context-path: /api/v1
+  port: 8081
 spring:
   application:
     name: AgroLands
@@ -19,5 +23,3 @@ spring:
   elasticsearch:
     rest:
       uris: ${ELASTICSEARCH_URIS}
-server:
-  port: 8080
