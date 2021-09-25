@@ -1,5 +1,6 @@
 package ru.kmvinvest.agrolands.rest.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class LandDTO {
 
     private Integer area;
 
+    @JsonFormat(pattern = "dd.MM.yyyy")
     private LocalDate created;
 
     private List<OwnerDTO> owners;

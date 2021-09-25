@@ -3,14 +3,13 @@ package ru.kmvinvest.agrolands.domain.entity;
 
 
 import lombok.*;
+import ru.kmvinvest.agrolands.domain.entity.common.AbstractIdentified;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
-import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Currency;
 import java.util.List;
 
 

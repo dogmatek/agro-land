@@ -1,7 +1,7 @@
 package ru.kmvinvest.agrolands.domain.entity;
 
 import lombok.*;
-import sun.security.provider.MD5;
+import ru.kmvinvest.agrolands.domain.entity.common.AbstractIdentified;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

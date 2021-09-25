@@ -3,6 +3,7 @@ package ru.kmvinvest.agrolands.domain.entity;
 import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
+import ru.kmvinvest.agrolands.domain.entity.common.AbstractIdentified;
 
 import javax.persistence.*;
 

@@ -1,4 +1,4 @@
-package ru.kmvinvest.agrolands.domain.entity;
+package ru.kmvinvest.agrolands.domain.entity.common;
 
 import org.hibernate.annotations.GenericGenerator;
 
