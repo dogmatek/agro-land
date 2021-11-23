@@ -1,0 +1,4 @@
+rootProject.name = 'agro-lands'
+include 'agro-lands'
+include 'agro-lands-api'
+

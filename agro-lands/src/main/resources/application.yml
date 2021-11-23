@@ -1,0 +1,27 @@
+server:
+  servlet:
+    context-path: /api/v1
+  port: 8081
+spring:
+  application:
+    name: AgroLands
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+  elasticsearch:
+    rest:
+      uris: ${ELASTICSEARCH_URIS}
+  jackson:
+    date-format: dd.MM.yyyy
+    time-zone: MST7MDT
