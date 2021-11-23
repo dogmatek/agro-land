@@ -20,6 +20,12 @@ public class OwnerToLand extends AbstractIdentified {
     @Column(name = "RELATION_TYPE")
     private String relationType;
 
+    @Column(name = "AREA")
+    private Integer area;
+
+    @Column(name = "SHARE")
+    private Double share;
+
     @ManyToOne(fetch= FetchType.EAGER)
     @JoinColumn(name = "LAND_ID")
     @Fetch(FetchMode.JOIN)
